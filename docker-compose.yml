@@ -1,0 +1,15 @@
+version: '2'
+services:
+  db:
+    image: postgres
+    env_file: .env
+  web:
+    build: .
+    env_file: .env
+    command: mix phoenix.server
+    ports:
+      - 4000:4000
+    volumes:
+      - .:/opt/hello
+    depends_on:
+      - db
