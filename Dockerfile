@@ -8,4 +8,6 @@ RUN mix local.hex --force && mix local.rebar --force
 RUN mkdir /opt/spike-phoenix
 WORKDIR /opt/spike-phoenix
 ADD . /opt/spike-phoenix
-RUN mix do deps.get, deps.compile
+RUN mix deps.get
+RUN mix deps.compile
+# RUN elixir --erl "-smp disable" /usr/local/elixir/bin/mix compile
