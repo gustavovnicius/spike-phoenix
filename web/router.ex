@@ -18,6 +18,9 @@ defmodule Test.Router do
 
     get "/", PageController, :index
     get "/hello", HelloController, :index
+    get "/hello/:messenger", HelloController, :show
+    resources "/users", UserController
+    resources "/admins", AdminController, except: [:new, :edit]
   end
 
   # Other scopes may use custom stacks.
