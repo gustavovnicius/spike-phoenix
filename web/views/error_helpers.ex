@@ -1,4 +1,4 @@
-defmodule Test.ErrorHelpers do
+defmodule MyApp.ErrorHelpers do
   @moduledoc """
   Conveniences for translating and building error messages.
   """
@@ -26,10 +26,10 @@ defmodule Test.ErrorHelpers do
     #
     #     dngettext "errors", "1 file", "%{count} files", count
     #
-    Gettext.dngettext(Test.Gettext, "errors", msg, msg, opts[:count], opts)
+    Gettext.dngettext(MyApp.Gettext, "errors", msg, msg, opts[:count], opts)
   end
 
   def translate_error(msg) do
-    Gettext.dgettext(Test.Gettext, "errors", msg)
+    Gettext.dgettext(MyApp.Gettext, "errors", msg)
   end
 end

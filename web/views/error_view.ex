@@ -1,5 +1,5 @@
-defmodule Test.ErrorView do
-  use Test.Web, :view
+defmodule MyApp.ErrorView do
+  use MyApp.Web, :view
 
   def render("404.html", _assigns) do
     "Page not found"

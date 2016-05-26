@@ -1,12 +1,12 @@
-defmodule Test.Web do
+defmodule MyApp.Web do
   @moduledoc """
   A module that keeps using definitions for controllers,
   views and so on.
 
   This can be used in your application as:
 
-      use Test.Web, :controller
-      use Test.Web, :view
+      use MyApp.Web, :controller
+      use MyApp.Web, :view
 
   The definitions below will be executed for every view,
   controller, etc, so keep them short and clean, focused
@@ -30,12 +30,12 @@ defmodule Test.Web do
     quote do
       use Phoenix.Controller
 
-      alias Test.Repo
+      alias MyApp.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
 
-      import Test.Router.Helpers
-      import Test.Gettext
+      import MyApp.Router.Helpers
+      import MyApp.Gettext
     end
   end
 
@@ -49,9 +49,9 @@ defmodule Test.Web do
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import Test.Router.Helpers
-      import Test.ErrorHelpers
-      import Test.Gettext
+      import MyApp.Router.Helpers
+      import MyApp.ErrorHelpers
+      import MyApp.Gettext
     end
   end
 
@@ -65,10 +65,10 @@ defmodule Test.Web do
     quote do
       use Phoenix.Channel
 
-      alias Test.Repo
+      alias MyApp.Repo
       import Ecto
       import Ecto.Query, only: [from: 1, from: 2]
-      import Test.Gettext
+      import MyApp.Gettext
     end
   end
 

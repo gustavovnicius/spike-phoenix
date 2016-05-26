@@ -1,3 +1,3 @@
-defmodule Test.PageViewTest do
-  use Test.ConnCase, async: true
+defmodule MyApp.PageViewTest do
+  use MyApp.ConnCase, async: true
 end

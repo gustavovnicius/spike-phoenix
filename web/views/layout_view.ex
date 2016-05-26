@@ -1,3 +1,3 @@
-defmodule Test.LayoutView do
-  use Test.Web, :view
+defmodule MyApp.LayoutView do
+  use MyApp.Web, :view
 end

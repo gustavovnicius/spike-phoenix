@@ -1,11 +1,13 @@
-# Phoenix Spike
+# MyApp
 
 To start your Phoenix app:
 
-  * `docker-compose up`
-  * Create and migrate your database with `docker-compose run web mix ecto.create && mix ecto.migrate`
+  * Install dependencies with `mix deps.get`
+  * Create and migrate your database with `mix ecto.create && mix ecto.migrate`
+  * Install Node.js dependencies with `npm install`
+  * Start Phoenix endpoint with `mix phoenix.server`
 
-Now you can visit [`localhost:4000`](http://localhost:4000) or check the docker-machine IP and hit it on your browser.
+Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
 Ready to run in production? Please [check our deployment guides](http://www.phoenixframework.org/docs/deployment).
 
